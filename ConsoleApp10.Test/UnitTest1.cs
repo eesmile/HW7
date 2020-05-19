@@ -28,6 +28,8 @@ namespace ConsoleApp10.Test
         }
         [Theory]
         [InlineData(9,3,27)]
+        [InlineData(10, 3, 30)]
+        [InlineData(9, 3, 15)]
         public void TestMulti(double a, double b, double exp)
         {
             Calc calc = new Calc();
@@ -36,6 +38,8 @@ namespace ConsoleApp10.Test
         }
         [Theory]
         [InlineData(9, 3, 3)]
+        [InlineData(8, 3, 2)]
+        [InlineData(8, 2, 4)]
         public void TestDiv(double a, double b, double exp)
         {
             Calc calc = new Calc();
@@ -44,6 +48,8 @@ namespace ConsoleApp10.Test
         }
         [Theory]
         [InlineData(9, 3)]
+        [InlineData(2, 3)]
+        [InlineData(25, 5)]
         public void TestSqrt(double a, double exp)
         {
             Calc calc = new Calc();
